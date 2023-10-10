@@ -1,11 +1,6 @@
-import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
-import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
-import { UserCard } from "./components/organisms/user/UserCard";
-import { SearchInput } from "./components/molecules/SearchInput";
+import { Router } from "./router/Router";
 import "./style.css"
-import { HeaderOnly } from "./components/templates/HeaderOnly";
-import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
-import { DefaultLayout } from "./components/templates/DefaultLayout";
+
 
 const user = {
   name: "つばさ",
@@ -21,16 +16,7 @@ const user = {
 
 function App() {
   return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <br />
-        <SearchInput />
-        <br />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
+    <Router />
   );
 }
 

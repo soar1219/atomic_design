@@ -1,4 +1,3 @@
-import { Footer } from "../atoms/layout/Footer";
 import { Header } from "../atoms/layout/Header";
 
 export const HeaderOnly = (props) => {
@@ -7,7 +6,6 @@ export const HeaderOnly = (props) => {
         <div>
             <Header />
             { children }
-            <Footer />
         </div>
     )
 }
